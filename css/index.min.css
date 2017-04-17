@@ -17,11 +17,11 @@ body,
 html {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 body {
   font-size: 20px;
   font-family: 'Dosis', sans-serif;
+  padding-top: 5%;
   /*	background-color: @main-color;
 	background-image: url('../img/royal.png');
 	background-repeat: repeat;*/
@@ -42,9 +42,9 @@ body {
 }
 .main-container {
   background-color: #DFD6D6;
-  max-width: 960px;
-  height: 80%;
-  margin: 5% auto;
+  max-width: 500px;
+  height: 400px;
+  margin: 0 auto;
   border: 1px solid black;
   padding: 5px;
 }
@@ -52,6 +52,15 @@ body {
   width: 100%;
   height: 100%;
   border: 2px dashed #B42525;
+}
+.pocket {
+  width: 550px;
+  height: 200px;
+  position: relative;
+  top: -30%;
+  border: 1px solid black;
+  background: inherit;
+  margin: 0 auto;
 }
 .profile {
   position: relative;

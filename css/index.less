@@ -30,7 +30,6 @@
 
 body,html{
 	.full;
-	overflow: hidden;
 
 }
 
@@ -38,6 +37,8 @@ body{
 
 	font-size: 20px;
 	font-family: 'Dosis', sans-serif;
+
+	padding-top: 5%;
 
 /*	background-color: @main-color;
 	background-image: url('../img/royal.png');
@@ -68,9 +69,9 @@ body{
 
 .main-container{
 	background-color: @container-color;
-	max-width: 960px;
-	height: 80%;
-	margin: 5% auto;
+	max-width: 500px;
+	height: 400px;
+	.center;
 	border: 1px solid black;
 	padding: 5px;
 
@@ -78,6 +79,16 @@ body{
 		.full;
 		border: 2px dashed @main-color;
 	}
+}
+
+.pocket{
+	width: 550px;
+	height: 200px;
+	position: relative;
+	top: -30%;
+	border: 1px solid black;
+	background: inherit;
+	.center;
 }
 
 .profile{
