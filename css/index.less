@@ -38,7 +38,7 @@ body{
 	font-size: 20px;
 	font-family: 'Dosis', sans-serif;
 
-	padding-top: 5%;
+	padding-top: 150px;
 
 /*	background-color: @main-color;
 	background-image: url('../img/royal.png');
@@ -69,15 +69,27 @@ body{
 
 .main-container{
 	background-color: @container-color;
+	position: relative;
 	max-width: 500px;
-	height: 400px;
+	height: 300px;
 	.center;
 	border: 1px solid black;
 	padding: 5px;
+	top: 0;
+
+	transition: all 1s ease;
 
 	.canvas{
 		.full;
 		border: 2px dashed @main-color;
+	}
+
+	&:hover{
+		top: -90px;
+	}
+
+	&:focus{
+		top: -90px;
 	}
 }
 
@@ -86,9 +98,17 @@ body{
 	height: 200px;
 	position: relative;
 	top: -30%;
-	border: 1px solid black;
+	border: 1px dashed black;
 	background: inherit;
 	.center;
+
+	.decorate{
+		border: 1px dashed black;
+		width: 560px;
+		margin-left: -5px;
+		height: 20%;
+		background: inherit;
+	}
 }
 
 .profile{
@@ -121,17 +141,42 @@ body{
 }
 
 .resume{
-	width: 60%;
+	width: 65%;
 	.center;
 }
 
+.buttons{
+	position: absolute;
+	width: 10%;
+	height: 100%;
+	background: inherit;
+	top: 0;
+	left: 0;
+	border: 10px solid @main-color;
+
+	.button{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: #E1CACA;
+		border: 3px solid #BA7777;
+		.center;
+		margin-top: 40px;
+	}
+}
+
 footer{
-	background-color: rgba(3,3,3,.2);
+	background-color: white;
+
 	font-size: .8rem;
-	width: 20%;
+	width: 150px;
+	height: 20px;
 	.center;
-	padding:2px 5px;
 	text-align: center;
+	position: absolute;
+	bottom: -20px;
+	right: 50px;
+	border-top: 1px dashed @main-color;
 }
 
 .contact{
