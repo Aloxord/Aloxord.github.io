@@ -1,0 +1,146 @@
+@main-color: #B42525;
+
+@container-color: #DFD6D6;
+
+@font-color: #9C7777;
+
+@test-color: #13D119;
+
+@image-width: 7%;
+
+.full{
+	width: 100%;
+	height: 100%;
+}
+
+.center{
+	margin: 0 auto;
+}
+
+.background-properties{
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body,html{
+	.full;
+	overflow: hidden;
+
+}
+
+body{
+
+	font-size: 20px;
+	font-family: 'Dosis', sans-serif;
+	/*background-color: @main-color;
+	background-image: url('./img/royal.png');
+	background-repeat: repeat;*/
+
+	background-color: @main-color;
+	background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+	repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+	repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+
+
+/*	background-color: gray;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+*/	
+
+/*	background-color: #942727;
+	background-image: repeating-linear-gradient(315deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+*/
+
+/*	background: 
+	linear-gradient(63deg, #942727 23%, transparent 23%) 7px 0, 
+	linear-gradient(63deg, transparent 74%, #942727 78%), 
+	linear-gradient(63deg, transparent 34%, #942727 38%, #942727 58%, transparent 62%), 
+	#444;
+	background-size: 16px 48px;*/
+
+}
+
+.main-container{
+	background-color: @container-color;
+	max-width: 960px;
+	height: 80%;
+	margin: 5% auto;
+	border: 1px solid black;
+	padding: 5px;
+
+	.canvas{
+		.full;
+		border: 2px dashed @main-color;
+	}
+}
+
+.profile{
+	position: relative;
+	background-color: inherit;
+	width: 100%;
+	height: 45%;
+	text-align: center;
+	padding-top: 5%;
+}
+
+.pic{
+	background-image: url('../img/logo.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 70px;
+	height: 100px;
+	.center;
+}
+
+.portfolio{
+	width: 60%;
+	.center;
+}
+
+.projects{
+	width: 100%;
+	height: 150px;
+}
+
+footer{
+	background-color: rgba(3,3,3,.2);
+	font-size: .8rem;
+	width: 20%;
+	.center;
+	padding:2px 5px;
+	text-align: center;
+}
+
+.contact{
+	position: absolute;
+	width: 20px;
+	height: 100px;
+	top: 30px;
+	right: 30px;
+
+	a{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin-bottom: 10px;
+	}
+
+	.twitter{
+		background-image: url('../img/twitter.svg');
+		.background-properties;
+	}
+	.linkedin{
+		background-image: url('../img/linkedin.svg');
+		.background-properties;
+	}
+	.github{
+		background-image: url('../img/github.png');
+		.background-properties;
+	}
+}
