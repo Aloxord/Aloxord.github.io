@@ -26,7 +26,7 @@ body {
   /*	background-color: @main-color;
 	background-image: url('../img/royal.png');
 	background-repeat: repeat;*/
-  background-color: #F2780C;
+  background-color: #B42525;
   background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0, 0, 0, 0.4) 50px, rgba(0, 0, 0, 0.4) 53px, transparent 53px, transparent 63px, rgba(0, 0, 0, 0.4) 63px, rgba(0, 0, 0, 0.4) 66px, transparent 66px, transparent 116px, rgba(0, 0, 0, 0.5) 116px, rgba(0, 0, 0, 0.5) 166px, rgba(255, 255, 255, 0.2) 166px, rgba(255, 255, 255, 0.2) 169px, rgba(0, 0, 0, 0.5) 169px, rgba(0, 0, 0, 0.5) 179px, rgba(255, 255, 255, 0.2) 179px, rgba(255, 255, 255, 0.2) 182px, rgba(0, 0, 0, 0.5) 182px, rgba(0, 0, 0, 0.5) 232px, transparent 232px), repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0, 0, 0, 0.4) 50px, rgba(0, 0, 0, 0.4) 53px, transparent 53px, transparent 63px, rgba(0, 0, 0, 0.4) 63px, rgba(0, 0, 0, 0.4) 66px, transparent 66px, transparent 116px, rgba(0, 0, 0, 0.5) 116px, rgba(0, 0, 0, 0.5) 166px, rgba(255, 255, 255, 0.2) 166px, rgba(255, 255, 255, 0.2) 169px, rgba(0, 0, 0, 0.5) 169px, rgba(0, 0, 0, 0.5) 179px, rgba(255, 255, 255, 0.2) 179px, rgba(255, 255, 255, 0.2) 182px, rgba(0, 0, 0, 0.5) 182px, rgba(0, 0, 0, 0.5) 232px, transparent 232px), repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0, 0, 0, 0.2) 2px, rgba(0, 0, 0, 0.2) 3px, transparent 3px, transparent 5px, rgba(0, 0, 0, 0.2) 5px);
   /*	background-color: gray;
 	background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
@@ -55,7 +55,7 @@ body {
 .main-container .canvas {
   width: 100%;
   height: 100%;
-  border: 2px dashed #F2780C;
+  border: 2px dashed #B42525;
 }
 .main-container:hover {
   top: -90px;
@@ -115,8 +115,8 @@ body {
   background: inherit;
   top: 0;
   left: 0;
-  border-left: 10px solid #F2780C;
-  border-right: 10px solid #F2780C;
+  border-left: 10px solid #B42525;
+  border-right: 10px solid #B42525;
 }
 .buttons .button {
   width: 50px;
@@ -137,7 +137,7 @@ footer {
   position: absolute;
   bottom: -20px;
   right: 50px;
-  border-top: 1px dashed #F2780C;
+  border-top: 1px dashed #B42525;
 }
 .contact {
   position: absolute;
