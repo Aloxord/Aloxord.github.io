@@ -74,7 +74,7 @@ pre[class*="language-"] {
 }
 
 .token.punctuation {
-  color: #ccecff;
+  color: #00b0f0;
 }
 
 .namespace {
@@ -97,7 +97,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #00b0f0;
+  color: #ccecff;
 }
 
 .token.operator,
