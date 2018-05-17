@@ -176,6 +176,7 @@ THIS IS THE IMPORTANT FUNCTION
 						str = sCode.querySelectorAll(".string")[3],
 						key = document.querySelector("#key");
 
+					key.style.color = "#2d9fd1";
 					button.style.backgroundImage = "none";
 					button.innerText = "Make Delivery!";
 
