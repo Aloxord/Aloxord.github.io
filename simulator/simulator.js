@@ -80,18 +80,17 @@
 					dataL--;
 				}
 	            xhr.open(obj.method,obj.url,true);
+	            /*if (typeof obj.cors === "boolean" && obj.cors === true) xhr.withCredentials = true;*/
 	            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	            if (typeof obj.cors === "boolean" && obj.cors === true) xhr.withCredentials = true;
-	            /*xhr.onload = function()
+				xhr.onloadend = function()
+				{
+					resolve(xhr.responseText);
+				}
+				/*xhr.onload = function()
 				{
 					resolve(xhr.responseText);
 					console.log(xhr);
 				}*/
-				xhr.onloadend = function()
-				{
-					resolve(xhr.responseText);
-					console.log(xhr);
-				}
 	            xhr.send(obj.data ? dataS : null);
 	        });
 		}
@@ -138,7 +137,7 @@
 
 					button.style.backgroundImage = "none";
 					button.innerText = "Make Delivery!";
-					str.innerText = storeID = "CODE FROM SERVER!";
+					str.innerText = storeID = res;
 					key.innerHTML = "<b>Your Store ID: </b><br />"+storeID,
 					key.classList.add('animate');
 					key.classList.add('fadeInDown');
@@ -159,7 +158,7 @@
 					sCode.classList.add("slideInRight");
 				});
 			}else if (count === 2){
-				console.log(storeID);
+				count++;
 				request({
 					url: "https://us-central1-blip-c1e83.cloudfunctions.net/makeDeliveryRequest",
 					method: "POST",
@@ -179,7 +178,6 @@
 				        "pickupNumber": "XXX-XXX-XXXX"
 				    }
 				}).then(function(res){
-					console.log(res);
 
 					const bg = document.querySelector(".bg");
 
