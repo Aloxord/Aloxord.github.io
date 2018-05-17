@@ -86,7 +86,7 @@ THIS IS THE IMPORTANT FUNCTION
 						on:{
 							click: apiCall
 						}
-					},"TRY ME!"),
+					},"Go"),
 					k("div",{
 						id: "key",
 						class: ["key"]
