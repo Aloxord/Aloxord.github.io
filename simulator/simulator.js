@@ -124,6 +124,7 @@ THIS IS THE IMPORTANT FUNCTION
 
 				xhr.onload = function()
 				{
+					console.log("yeah",xhr);
 					resolve(xhr.responseText);
 				}
 
