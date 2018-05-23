@@ -151,7 +151,7 @@ THIS IS THE IMPORTANT FUNCTION
 				request({
 					url: "https://us-central1-blip-c1e83.cloudfunctions.net/createTestStore",
 					method: "POST",
-					cors: true,
+					cors: false,
 					data:{
 				        "storeName": "Test Store",
 				        "storeLogo": "Your store logo URL",
@@ -215,7 +215,7 @@ THIS IS THE IMPORTANT FUNCTION
 				request({
 					url: "https://us-central1-blip-c1e83.cloudfunctions.net/makeDeliveryRequest",
 					method: "POST",
-					cors: true,
+					cors: false,
 					data:{
 
 						//here is the storeID global set in the param
