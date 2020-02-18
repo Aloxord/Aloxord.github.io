@@ -85,11 +85,13 @@ THIS IS THE IMPORTANT FUNCTION
 						class: "btn-req",
 						on:{
 							click: apiCall
-						}
+						},
+						style: obj.button || {}
 					},"Go"),
 					k("div",{
 						id: "key",
-						class: ["key"]
+						class: ["key"],
+						style: obj.id || {}
 					})
 				])
 			])
@@ -189,7 +191,7 @@ THIS IS THE IMPORTANT FUNCTION
 
 					//and here i'm showing in the screen
 
-					key.innerHTML = "<b>Your Store ID: </b><br />"+storeID,
+					key.innerHTML = "<b>Your StoreID is: </b><br />"+storeID,
 
 					//^^^^^^^^^^^^^^^^^^^^ HERE!
 
@@ -238,6 +240,8 @@ THIS IS THE IMPORTANT FUNCTION
 
 					const bg = document.querySelector(".bg");
 
+					key.innerHTML = "<b>Your DeliveryID is: </b><br />"+storeID,
+
 					bg.classList.remove("shakeIt");
 					bg.addEventListener("animationend",function(){
 						
@@ -273,6 +277,14 @@ in the "el" param
 **********************/
 simulator({
 	el: "#app",
+	/*
+	TO CHANGE POSITION AND STYLES USE CSS IN THE NEXT PROPERTIES AS A JSON OBJECT
+	id:{
+		"background-color": "red"
+	},
+	button:{
+		"color": "green"
+	}*/
 })
 
 
